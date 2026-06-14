@@ -6829,7 +6829,7 @@ function draw() {
   // Kern weich angeglichen an Corona: größer, diffuser, geringerer Alpha
   // → keine harte Trennung mehr zwischen heller Corona und dunklem Kern
   {
-    drawHFStyleCloudFleck(biggerCloud, 1.1, 1, 1.48);
+    drawHFStyleCloudFleck(biggerCloud, 1.1, 1, 1.64);
     drawCloudLabel('F1', biggerCloud);
     if (upperLeftGreyCloud) {
       const f2Follow = createVector(
@@ -6845,7 +6845,7 @@ function draw() {
         1.55
       );
     }
-    drawHFStyleCloudFleck(upperLeftGreyCloud, 1.0, 2.10, 1.42);
+    drawHFStyleCloudFleck(upperLeftGreyCloud, 1.0, 2.10, 1.58);
     drawCloudLabel('F2', upperLeftGreyCloud);
     if (SHOW_CLOUDS) {
       f2CenterCopies.forEach((c, i) => {
@@ -6854,7 +6854,7 @@ function draw() {
           mouseDirNS.y * 0.72 + cos(frameCount * 0.012 + i) * 0.06
         );
         c.update(mouseMoving, [0.39, 0.61], [0.42, 0.62], SMALLER_SPEED_SCALE * 1.08, follow, 1.28);
-        drawHFStyleCloudFleck(c, 1.0, 2.10, 1.42);
+        drawHFStyleCloudFleck(c, 1.0, 2.10, 1.58);
       });
     }
   }
@@ -6966,7 +6966,7 @@ function draw() {
     smallerFollow,
     2.05
   );
-  drawHFStyleCloudFleck(smallerCloud, 1.0, 2.10, 1.42);
+  drawHFStyleCloudFleck(smallerCloud, 1.0, 2.10, 1.58);
   drawCloudLabel('F3', smallerCloud);
   // Weisser Superfleck temporÃ¤r ausgeblendet.
   /* Markierungsring + Beschriftung entfernt */
