@@ -111,7 +111,7 @@ const ORIGINAL_SCHL_COUNT = BASE_SCHL_COUNT + EXTRA_SCHL_COUNT;
 const SOFT_EXTRA_SCHL_COUNT = 22;
 const SCHL_COUNT        = ORIGINAL_SCHL_COUNT + SOFT_EXTRA_SCHL_COUNT;
 const SCHLC_TINT        = [98,100,114];
-const SCHLC_ALPHA       = 0.22;  // sehr transparent
+const SCHLC_ALPHA       = 0.23;  // sehr transparent
 const SCHLC_FEATHER     = 5.6;
 const SCHLC_LEN_MIN     = 76 * SCALE;
 const SCHLC_LEN_MAX     = 300 * SCALE;
@@ -128,12 +128,12 @@ function isSoftSchliereNumber(n) {
 /* Hellere Schlieren */
 const BRIGHT_SCHL_COUNT = 0;
 const BRIGHT_SCHLC_TINT = [100,102,116];
-const BRIGHT_SCHLC_ALPHA = 0.20;  // gleich transparent wie Grundschlieren
+const BRIGHT_SCHLC_ALPHA = 0.21;  // gleich transparent wie Grundschlieren
 
 /* Gelartige Schlieren – wie weiße Flecken, aber transparenter & gelartiger */
 const GEL_SCHL_COUNT = 0;
 const GEL_SCHLC_TINT = [104,108,122];
-const GEL_SCHLC_ALPHA = 0.18;  // gleich transparent wie Grundschlieren
+const GEL_SCHLC_ALPHA = 0.19;  // gleich transparent wie Grundschlieren
 const GEL_SCHLC_FEATHER = 1.0;
 const GEL_SCHLC_THICK_MIN = SCHLC_THICK_MIN;
 const GEL_SCHLC_THICK_MAX = SCHLC_THICK_MIN;
