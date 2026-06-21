@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 const canvas = document.getElementById('scene');
 const mainCtx = canvas.getContext('2d');
 let ctx = mainCtx;
@@ -15,7 +15,7 @@ let targetGlobalOrbitAngle = 0;
 let travelPhase = 0;
 let frameIndex = 0;
 let motionTotal = { x: 0, y: 0 };
-const SCHLIERE_SPRITE_REFRESH_FRAMES = 4;
+const SCHLIERE_SPRITE_REFRESH_FRAMES = 8;
 const SCHLIEREN_ALPHA_MUL = 0.90;
 const SCHLIEREN_THICKNESS_MUL = 0.86;
 const LIGHT_SCHLIEREN_ALPHA_MUL = 1.28;
@@ -153,7 +153,7 @@ function stable01(seed) {
 }
 
 function resize() {
-  const dpr = Math.max(1, window.devicePixelRatio || 1);
+  const dpr = 1;
   canvas.width = Math.round(window.innerWidth * dpr);
   canvas.height = Math.round(window.innerHeight * dpr);
   ctx = mainCtx;
